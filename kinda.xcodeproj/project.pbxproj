@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433F389267D3D3DB35E6A098 /* Pods_kinda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB44FD3456DC3FE75C5B8832 /* Pods_kinda.framework */; };
 		4B58F3C425A610520099B41D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58F3C325A610520099B41D /* AppDelegate.swift */; };
 		4B58F3C625A610520099B41D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58F3C525A610520099B41D /* SceneDelegate.swift */; };
 		4B58F3C825A610520099B41D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58F3C725A610520099B41D /* ViewController.swift */; };
@@ -15,6 +16,11 @@
 		4B58F3D025A610540099B41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B58F3CE25A610540099B41D /* LaunchScreen.storyboard */; };
 		4B58F3DB25A610540099B41D /* kindaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58F3DA25A610540099B41D /* kindaTests.swift */; };
 		4B58F3E625A610540099B41D /* kindaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58F3E525A610540099B41D /* kindaUITests.swift */; };
+		4B58F3F725A62C410099B41D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B58F3F625A62C410099B41D /* GoogleService-Info.plist */; };
+		4B58F3F825A62C410099B41D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B58F3F625A62C410099B41D /* GoogleService-Info.plist */; };
+		4B58F3F925A62C410099B41D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B58F3F625A62C410099B41D /* GoogleService-Info.plist */; };
+		9381026B757F5A70DD26DE57 /* Pods_kinda_kindaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59371D3A9C7492FDE3F066A3 /* Pods_kinda_kindaUITests.framework */; };
+		F931F8860D10149342C9225F /* Pods_kindaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2247CB9FBBB8A3879361E3E6 /* Pods_kindaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2247CB9FBBB8A3879361E3E6 /* Pods_kindaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kindaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		236366F465B287404067262B /* Pods-kinda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kinda.release.xcconfig"; path = "Target Support Files/Pods-kinda/Pods-kinda.release.xcconfig"; sourceTree = "<group>"; };
 		4B58F3C025A610520099B41D /* kinda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kinda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B58F3C325A610520099B41D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B58F3C525A610520099B41D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,14 @@
 		4B58F3E125A610540099B41D /* kindaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kindaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B58F3E525A610540099B41D /* kindaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kindaUITests.swift; sourceTree = "<group>"; };
 		4B58F3E725A610540099B41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B58F3F625A62C410099B41D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		59371D3A9C7492FDE3F066A3 /* Pods_kinda_kindaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kinda_kindaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78DB224C12F301DB1A5916D9 /* Pods-kinda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kinda.debug.xcconfig"; path = "Target Support Files/Pods-kinda/Pods-kinda.debug.xcconfig"; sourceTree = "<group>"; };
+		BA2CC7717AB25ECE872642C5 /* Pods-kinda-kindaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kinda-kindaUITests.release.xcconfig"; path = "Target Support Files/Pods-kinda-kindaUITests/Pods-kinda-kindaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB44FD3456DC3FE75C5B8832 /* Pods_kinda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kinda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCB98E6CE40B66C11F936A8 /* Pods-kindaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kindaTests.debug.xcconfig"; path = "Target Support Files/Pods-kindaTests/Pods-kindaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4140F925F536FCC64F2FF57 /* Pods-kindaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kindaTests.release.xcconfig"; path = "Target Support Files/Pods-kindaTests/Pods-kindaTests.release.xcconfig"; sourceTree = "<group>"; };
+		FC5082020015201F695CC4EA /* Pods-kinda-kindaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kinda-kindaUITests.debug.xcconfig"; path = "Target Support Files/Pods-kinda-kindaUITests/Pods-kinda-kindaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433F389267D3D3DB35E6A098 /* Pods_kinda.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F931F8860D10149342C9225F /* Pods_kindaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9381026B757F5A70DD26DE57 /* Pods_kinda_kindaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,8 @@
 				4B58F3D925A610540099B41D /* kindaTests */,
 				4B58F3E425A610540099B41D /* kindaUITests */,
 				4B58F3C125A610520099B41D /* Products */,
+				5B52CDAAE97FB18892AB62CF /* Pods */,
+				65EF8D7E359F5A28C47A26DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +126,7 @@
 				4B58F3C925A610520099B41D /* Main.storyboard */,
 				4B58F3CC25A610540099B41D /* Assets.xcassets */,
 				4B58F3CE25A610540099B41D /* LaunchScreen.storyboard */,
+				4B58F3F625A62C410099B41D /* GoogleService-Info.plist */,
 				4B58F3D125A610540099B41D /* Info.plist */,
 			);
 			path = kinda;
@@ -128,6 +150,30 @@
 			path = kindaUITests;
 			sourceTree = "<group>";
 		};
+		5B52CDAAE97FB18892AB62CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78DB224C12F301DB1A5916D9 /* Pods-kinda.debug.xcconfig */,
+				236366F465B287404067262B /* Pods-kinda.release.xcconfig */,
+				FC5082020015201F695CC4EA /* Pods-kinda-kindaUITests.debug.xcconfig */,
+				BA2CC7717AB25ECE872642C5 /* Pods-kinda-kindaUITests.release.xcconfig */,
+				DDCB98E6CE40B66C11F936A8 /* Pods-kindaTests.debug.xcconfig */,
+				F4140F925F536FCC64F2FF57 /* Pods-kindaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		65EF8D7E359F5A28C47A26DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB44FD3456DC3FE75C5B8832 /* Pods_kinda.framework */,
+				59371D3A9C7492FDE3F066A3 /* Pods_kinda_kindaUITests.framework */,
+				2247CB9FBBB8A3879361E3E6 /* Pods_kindaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B58F3EA25A610540099B41D /* Build configuration list for PBXNativeTarget "kinda" */;
 			buildPhases = (
+				EA54C6FAC17AF4C9D961DC11 /* [CP] Check Pods Manifest.lock */,
 				4B58F3BC25A610510099B41D /* Sources */,
 				4B58F3BD25A610510099B41D /* Frameworks */,
 				4B58F3BE25A610510099B41D /* Resources */,
+				D7BDF30B278A6E93380C9510 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B58F3ED25A610540099B41D /* Build configuration list for PBXNativeTarget "kindaTests" */;
 			buildPhases = (
+				1CB4F53FDBC49D5CE4DD0F8F /* [CP] Check Pods Manifest.lock */,
 				4B58F3D225A610540099B41D /* Sources */,
 				4B58F3D325A610540099B41D /* Frameworks */,
 				4B58F3D425A610540099B41D /* Resources */,
@@ -170,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B58F3F025A610540099B41D /* Build configuration list for PBXNativeTarget "kindaUITests" */;
 			buildPhases = (
+				22FB491A24306289A42D94C2 /* [CP] Check Pods Manifest.lock */,
 				4B58F3DD25A610540099B41D /* Sources */,
 				4B58F3DE25A610540099B41D /* Frameworks */,
 				4B58F3DF25A610540099B41D /* Resources */,
+				383DBE6BE9D252A821B93B93 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B58F3D025A610540099B41D /* LaunchScreen.storyboard in Resources */,
+				4B58F3F725A62C410099B41D /* GoogleService-Info.plist in Resources */,
 				4B58F3CD25A610540099B41D /* Assets.xcassets in Resources */,
 				4B58F3CB25A610520099B41D /* Main.storyboard in Resources */,
 			);
@@ -241,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B58F3F825A62C410099B41D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +301,114 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B58F3F925A62C410099B41D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CB4F53FDBC49D5CE4DD0F8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kindaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22FB491A24306289A42D94C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kinda-kindaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		383DBE6BE9D252A821B93B93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kinda-kindaUITests/Pods-kinda-kindaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kinda-kindaUITests/Pods-kinda-kindaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kinda-kindaUITests/Pods-kinda-kindaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7BDF30B278A6E93380C9510 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kinda/Pods-kinda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kinda/Pods-kinda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kinda/Pods-kinda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA54C6FAC17AF4C9D961DC11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kinda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B58F3BC25A610510099B41D /* Sources */ = {
@@ -433,6 +590,7 @@
 		};
 		4B58F3EB25A610540099B41D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78DB224C12F301DB1A5916D9 /* Pods-kinda.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +610,7 @@
 		};
 		4B58F3EC25A610540099B41D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 236366F465B287404067262B /* Pods-kinda.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +630,7 @@
 		};
 		4B58F3EE25A610540099B41D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDCB98E6CE40B66C11F936A8 /* Pods-kindaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +653,7 @@
 		};
 		4B58F3EF25A610540099B41D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4140F925F536FCC64F2FF57 /* Pods-kindaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +676,7 @@
 		};
 		4B58F3F125A610540099B41D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5082020015201F695CC4EA /* Pods-kinda-kindaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +697,7 @@
 		};
 		4B58F3F225A610540099B41D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA2CC7717AB25ECE872642C5 /* Pods-kinda-kindaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
