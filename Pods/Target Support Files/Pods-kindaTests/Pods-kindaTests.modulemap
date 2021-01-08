@@ -1,0 +1,6 @@
+framework module Pods_kindaTests {
+  umbrella header "Pods-kindaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
