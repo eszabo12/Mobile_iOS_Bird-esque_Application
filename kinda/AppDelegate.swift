@@ -7,10 +7,12 @@
 
 import UIKit
 import Firebase
+@_exported import SnapKit
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     // some code gotten from: https://ioscoachfrank.com/remove-main-storyboard.html
-    var window: UIWindow?
+    public var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

@@ -7,25 +7,35 @@
 
 import UIKit
 import MapKit
+import Firebase
 
 
+//some code from: https://www.raywenderlich.com/7738344-mapkit-tutorial-getting-started
 class MapViewController: UIViewController {
 
     private var mapView: MKMapView!
 
-
     override func viewDidLoad() {
+        var ref: DatabaseReference!
+
+        ref = Database.database().reference()
+        
         super.viewDidLoad()
  
         // Do any additional setup after loading the view.
         // Set initial location in Honolulu
         mapView = MKMapView()
-        mapView.frame = view.bounds
         view.addSubview(mapView)
+        mapView.snp.makeConstraints{ (make) in
+            make.top.bottom.leading.trailing.equalToSuperview()
+        }
         let initialLocation = CLLocation(latitude: 34.021955, longitude: -118.283894)
         mapView.centerToLocation(initialLocation)
         let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 200000)
         mapView.setCameraZoomRange(zoomRange, animated: true)
+        let kap = AnnotationClass(coordinate: CLLocationCoordinate2D(latitude: 34.02229053526, longitude: -118.290907), title: "KAP")
+        mapView.addAnnotation(kap)
+        
 
     }
 

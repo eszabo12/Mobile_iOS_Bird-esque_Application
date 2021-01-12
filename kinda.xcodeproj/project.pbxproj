@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		433F389267D3D3DB35E6A098 /* Pods_kinda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB44FD3456DC3FE75C5B8832 /* Pods_kinda.framework */; };
+		4B57C40A25A9A923009D8785 /* AnnotationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57C40925A9A923009D8785 /* AnnotationClass.swift */; };
+		4B57C41125A9B0D8009D8785 /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57C41025A9B0D8009D8785 /* OvalLayer.swift */; };
 		4B58F3C425A610520099B41D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58F3C325A610520099B41D /* AppDelegate.swift */; };
 		4B58F3C625A610520099B41D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58F3C525A610520099B41D /* SceneDelegate.swift */; };
 		4B58F3CD25A610540099B41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B58F3CC25A610540099B41D /* Assets.xcassets */; };
@@ -18,15 +20,13 @@
 		4B58F3F825A62C410099B41D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B58F3F625A62C410099B41D /* GoogleService-Info.plist */; };
 		4B58F3F925A62C410099B41D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B58F3F625A62C410099B41D /* GoogleService-Info.plist */; };
 		4B8B438825A637E6006B999B /* LaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B438725A637E6006B999B /* LaunchController.swift */; };
-		4B8B438925A637E6006B999B /* LaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B438725A637E6006B999B /* LaunchController.swift */; };
-		4B8B438A25A637E6006B999B /* LaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B438725A637E6006B999B /* LaunchController.swift */; };
 		4B8B438F25A637F9006B999B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B438E25A637F9006B999B /* RootViewController.swift */; };
 		4B8B439025A637F9006B999B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B438E25A637F9006B999B /* RootViewController.swift */; };
 		4B8B439125A637F9006B999B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B438E25A637F9006B999B /* RootViewController.swift */; };
-		4B8B439925A638B7006B999B /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B439825A638B7006B999B /* FirebaseAuthManager.swift */; };
 		4B8BE65425A7B9A100DB89DB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8BE65325A7B9A100DB89DB /* MapViewController.swift */; };
 		4BC3297525A7A94000F8A8E3 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC3297425A7A94000F8A8E3 /* UIButton.swift */; };
-		9381026B757F5A70DD26DE57 /* Pods_kinda_kindaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59371D3A9C7492FDE3F066A3 /* Pods_kinda_kindaUITests.framework */; };
+		4BFF487225ABC44E004EFFDB /* MyAuthorizationAppleIDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF487125ABC44E004EFFDB /* MyAuthorizationAppleIDButton.swift */; };
+		976951CB84CA81C3C82BA708 /* Pods_kindaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD29722EEB85FBCC4B0C00B /* Pods_kindaUITests.framework */; };
 		F931F8860D10149342C9225F /* Pods_kindaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2247CB9FBBB8A3879361E3E6 /* Pods_kindaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +50,8 @@
 /* Begin PBXFileReference section */
 		2247CB9FBBB8A3879361E3E6 /* Pods_kindaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kindaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		236366F465B287404067262B /* Pods-kinda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kinda.release.xcconfig"; path = "Target Support Files/Pods-kinda/Pods-kinda.release.xcconfig"; sourceTree = "<group>"; };
+		4B57C40925A9A923009D8785 /* AnnotationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationClass.swift; sourceTree = "<group>"; };
+		4B57C41025A9B0D8009D8785 /* OvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OvalLayer.swift; sourceTree = "<group>"; };
 		4B58F3C025A610520099B41D /* kinda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kinda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B58F3C325A610520099B41D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B58F3C525A610520099B41D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,15 +67,17 @@
 		4B58F3F625A62C410099B41D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B8B438725A637E6006B999B /* LaunchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchController.swift; sourceTree = "<group>"; };
 		4B8B438E25A637F9006B999B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		4B8B439825A638B7006B999B /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		4B8BE65325A7B9A100DB89DB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4BC3297425A7A94000F8A8E3 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
-		59371D3A9C7492FDE3F066A3 /* Pods_kinda_kindaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kinda_kindaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFF487125ABC44E004EFFDB /* MyAuthorizationAppleIDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAuthorizationAppleIDButton.swift; sourceTree = "<group>"; };
+		6D0ABF40A7A5BEACC23D4698 /* Pods-kindaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kindaUITests.debug.xcconfig"; path = "Target Support Files/Pods-kindaUITests/Pods-kindaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DD29722EEB85FBCC4B0C00B /* Pods_kindaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kindaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DB224C12F301DB1A5916D9 /* Pods-kinda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kinda.debug.xcconfig"; path = "Target Support Files/Pods-kinda/Pods-kinda.debug.xcconfig"; sourceTree = "<group>"; };
 		BA2CC7717AB25ECE872642C5 /* Pods-kinda-kindaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kinda-kindaUITests.release.xcconfig"; path = "Target Support Files/Pods-kinda-kindaUITests/Pods-kinda-kindaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB44FD3456DC3FE75C5B8832 /* Pods_kinda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kinda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCB98E6CE40B66C11F936A8 /* Pods-kindaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kindaTests.debug.xcconfig"; path = "Target Support Files/Pods-kindaTests/Pods-kindaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4140F925F536FCC64F2FF57 /* Pods-kindaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kindaTests.release.xcconfig"; path = "Target Support Files/Pods-kindaTests/Pods-kindaTests.release.xcconfig"; sourceTree = "<group>"; };
+		F879CA94F24FC29EA60DAC53 /* Pods-kindaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kindaUITests.release.xcconfig"; path = "Target Support Files/Pods-kindaUITests/Pods-kindaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC5082020015201F695CC4EA /* Pods-kinda-kindaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kinda-kindaUITests.debug.xcconfig"; path = "Target Support Files/Pods-kinda-kindaUITests/Pods-kinda-kindaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,21 +102,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9381026B757F5A70DD26DE57 /* Pods_kinda_kindaUITests.framework in Frameworks */,
+				976951CB84CA81C3C82BA708 /* Pods_kindaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B50D8A625A6AA4B00551141 /* Views */ = {
+		4B50D8A625A6AA4B00551141 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				4B8B438E25A637F9006B999B /* RootViewController.swift */,
 				4B8B438725A637E6006B999B /* LaunchController.swift */,
 				4B8BE65325A7B9A100DB89DB /* MapViewController.swift */,
 			);
-			path = Views;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		4B58F3B725A610510099B41D = {
@@ -140,12 +144,11 @@
 		4B58F3C225A610520099B41D /* kinda */ = {
 			isa = PBXGroup;
 			children = (
-				4B50D8A625A6AA4B00551141 /* Views */,
+				4B50D8A625A6AA4B00551141 /* ViewControllers */,
 				4B8BE65825A7BA1000DB89DB /* Storyboards */,
 				4BC3297325A7A93000F8A8E3 /* Special Classes */,
 				4B58F3C325A610520099B41D /* AppDelegate.swift */,
 				4B58F3C525A610520099B41D /* SceneDelegate.swift */,
-				4B8B439825A638B7006B999B /* FirebaseAuthManager.swift */,
 				4B58F3CC25A610540099B41D /* Assets.xcassets */,
 				4B58F3CE25A610540099B41D /* LaunchScreen.storyboard */,
 				4B58F3F625A62C410099B41D /* GoogleService-Info.plist */,
@@ -182,7 +185,10 @@
 		4BC3297325A7A93000F8A8E3 /* Special Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4B57C41025A9B0D8009D8785 /* OvalLayer.swift */,
 				4BC3297425A7A94000F8A8E3 /* UIButton.swift */,
+				4B57C40925A9A923009D8785 /* AnnotationClass.swift */,
+				4BFF487125ABC44E004EFFDB /* MyAuthorizationAppleIDButton.swift */,
 			);
 			path = "Special Classes";
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 				BA2CC7717AB25ECE872642C5 /* Pods-kinda-kindaUITests.release.xcconfig */,
 				DDCB98E6CE40B66C11F936A8 /* Pods-kindaTests.debug.xcconfig */,
 				F4140F925F536FCC64F2FF57 /* Pods-kindaTests.release.xcconfig */,
+				6D0ABF40A7A5BEACC23D4698 /* Pods-kindaUITests.debug.xcconfig */,
+				F879CA94F24FC29EA60DAC53 /* Pods-kindaUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -204,8 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				BB44FD3456DC3FE75C5B8832 /* Pods_kinda.framework */,
-				59371D3A9C7492FDE3F066A3 /* Pods_kinda_kindaUITests.framework */,
 				2247CB9FBBB8A3879361E3E6 /* Pods_kindaTests.framework */,
+				6DD29722EEB85FBCC4B0C00B /* Pods_kindaUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -381,7 +389,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-kinda-kindaUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-kindaUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -394,15 +402,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-kinda-kindaUITests/Pods-kinda-kindaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-kindaUITests/Pods-kindaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-kinda-kindaUITests/Pods-kinda-kindaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-kindaUITests/Pods-kindaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kinda-kindaUITests/Pods-kinda-kindaUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kindaUITests/Pods-kindaUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D7BDF30B278A6E93380C9510 /* [CP] Embed Pods Frameworks */ = {
@@ -469,12 +477,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B8B438F25A637F9006B999B /* RootViewController.swift in Sources */,
+				4B57C40A25A9A923009D8785 /* AnnotationClass.swift in Sources */,
 				4B8B438825A637E6006B999B /* LaunchController.swift in Sources */,
 				4B58F3C425A610520099B41D /* AppDelegate.swift in Sources */,
 				4B58F3C625A610520099B41D /* SceneDelegate.swift in Sources */,
-				4B8B439925A638B7006B999B /* FirebaseAuthManager.swift in Sources */,
 				4BC3297525A7A94000F8A8E3 /* UIButton.swift in Sources */,
 				4B8BE65425A7B9A100DB89DB /* MapViewController.swift in Sources */,
+				4B57C41125A9B0D8009D8785 /* OvalLayer.swift in Sources */,
+				4BFF487225ABC44E004EFFDB /* MyAuthorizationAppleIDButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +492,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B8B438925A637E6006B999B /* LaunchController.swift in Sources */,
 				4B58F3DB25A610540099B41D /* kindaTests.swift in Sources */,
 				4B8B439025A637F9006B999B /* RootViewController.swift in Sources */,
 			);
@@ -492,7 +501,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B8B438A25A637E6006B999B /* LaunchController.swift in Sources */,
 				4B58F3E625A610540099B41D /* kindaUITests.swift in Sources */,
 				4B8B439125A637F9006B999B /* RootViewController.swift in Sources */,
 			);
@@ -729,7 +737,7 @@
 		};
 		4B58F3F125A610540099B41D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC5082020015201F695CC4EA /* Pods-kinda-kindaUITests.debug.xcconfig */;
+			baseConfigurationReference = 6D0ABF40A7A5BEACC23D4698 /* Pods-kindaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -750,7 +758,7 @@
 		};
 		4B58F3F225A610540099B41D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA2CC7717AB25ECE872642C5 /* Pods-kinda-kindaUITests.release.xcconfig */;
+			baseConfigurationReference = F879CA94F24FC29EA60DAC53 /* Pods-kindaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

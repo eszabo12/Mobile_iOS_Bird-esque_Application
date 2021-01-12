@@ -5,42 +5,36 @@
 //  Created by Elle on 1/6/21.
 //
 
+import AuthenticationServices
 import UIKit
+import Firebase
 
 class RootViewController: UIViewController, UITextFieldDelegate {
     public var userNameTextField: UITextField!
     var logo: UIImageView!
     public var passwordTextField: UITextField!
     public var signInButton: UIButton!
-//    @IBOutlet weak var facebookButton: UIButton!
-//    @IBOutlet weak var googleButton: UIButton!
-//    @IBOutlet weak var appleButton: UIButton!
-    
+    var appleButton: UIButton!
+    var googleButton: UIButton!
+    var authorizationButton: ASAuthorizationAppleIDButton!
+    override open var shouldAutorotate: Bool {
+        return true
+    }
     
     @objc func didTapSignUpButton() {
-        print("SADKFJASLKDJFLKS;DAFKLASDJFKLASDJFKLA;SJFLSADKL;FJK")
-        let signUpManager = FirebaseAuthManager()
+        
         if let email = userNameTextField.text, let password = passwordTextField.text {
-            signUpManager.createUser(email: email, password: password) {[weak self] (success) in
-                guard let `self` = self else { return }
-                var message: String = ""
-                if (success) {
-                    message = "User was sucessfully created."
-                } else {
-                    message = "There was an error."
+            Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+                if let error = error{
+                    print(error.localizedDescription)
+                    (UIApplication.shared.windows.filter {$0.isKeyWindow}.first)?.rootViewController = MapViewController()
+                    return
                 }
-                let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-//                self.present(alertController, animated: true)
-                if (!success){
-                    let viewController = MapViewController()
-                    viewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-                    self.present(viewController, animated: false)
-                }
+                
             }
+
         }
     }
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,12 +50,12 @@ class RootViewController: UIViewController, UITextFieldDelegate {
         userNameTextField = UITextField()
         userNameTextField.frame = CGRect(x: 10, y: logo.frame.maxY, width: view.bounds.width - 20, height: 40)
         
-        userNameTextField.backgroundColor = UIColor.black
+        userNameTextField.backgroundColor = UIColor(red: 0.19, green: 0.19, blue: 0.19, alpha: 1.00)
         userNameTextField.textColor = UIColor.white
         userNameTextField.attributedPlaceholder = NSAttributedString(string: "username / email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
-//        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: userNameTextField.frame.height))
-//        userNameTextField.leftView = paddingView
-//        userNameTextField.leftViewMode = UITextField.ViewMode.always
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: userNameTextField.frame.height))
+        userNameTextField.leftView = paddingView
+        userNameTextField.leftViewMode = UITextField.ViewMode.always
         view.addSubview(userNameTextField)
         
         
@@ -69,12 +63,14 @@ class RootViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.isSecureTextEntry = true
         passwordTextField.frame = CGRect(x: userNameTextField.frame.minX, y: userNameTextField.frame.maxY + 10, width: userNameTextField.frame.width, height: userNameTextField.frame.height)
         
-        passwordTextField.backgroundColor = UIColor.black
+        passwordTextField.backgroundColor = userNameTextField.backgroundColor
         passwordTextField.textColor = UIColor.white
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
-//        passwordTextField.leftView = paddingView
-//        passwordTextField.leftViewMode = UITextField.ViewMode.always
+        let paddingViewSecond = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: userNameTextField.frame.height))
+        passwordTextField.leftView = paddingViewSecond
+        passwordTextField.leftViewMode = UITextField.ViewMode.always
         view.addSubview(passwordTextField)
+        
         signInButton = UIButton(frame: CGRect(x:view.center.x - 40, y: passwordTextField.frame.maxY + 30, width: 80, height: 45))
         signInButton.setTitle("Sign In", for: .normal)
         signInButton.setTitleColor(UIColor.white, for: .normal)
@@ -92,6 +88,21 @@ class RootViewController: UIViewController, UITextFieldDelegate {
         divider.backgroundColor = UIColor(red: 0.86, green: 0.86, blue: 0.86, alpha: 1.00)
         view.addSubview(divider)
         
+        let or = UILabel(frame: CGRect(x: self.view.bounds.width/2.0 - 9, y: divider.frame.maxY + 35, width: 40, height: 20))
+        or.text = "or:"
+        or.textColor = UIColor(red: 0.86, green: 0.86, blue: 0.86, alpha: 1.00)
+        view.addSubview(or)
+        
+        authorizationButton = ASAuthorizationAppleIDButton(authorizationButtonType: .signIn,
+                                                           authorizationButtonStyle: .black
+)
+        authorizationButton.cornerRadius = authorizationButton.bounds.height/2
+        authorizationButton.addTarget(self, action: #selector(handleAuthorizationAppleIDButtonPress), for: .touchUpInside)
+        view.addSubview(authorizationButton)
+        authorizationButton.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(or).offset(50)
+        }
 
     }
 
@@ -109,6 +120,10 @@ class RootViewController: UIViewController, UITextFieldDelegate {
     func signInButtonAction() {
         print("Button pressed")
         didTapSignUpButton()
+    }
+    
+    @objc func handleAuthorizationAppleIDButtonPress(_sender: Any) {
+//        sendActions(for: .touchUpInside)
     }
 
 }
