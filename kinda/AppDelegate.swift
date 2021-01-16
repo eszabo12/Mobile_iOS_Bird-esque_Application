@@ -8,13 +8,17 @@
 import UIKit
 import Firebase
 @_exported import SnapKit
+import FBSDKCoreKit
+import Stripe
 
+//buy NIO
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     // some code gotten from: https://ioscoachfrank.com/remove-main-storyboard.html
     public var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        StripeAPI.defaultPublishableKey = "pk_test_fc5eGEHZiBB2IlzUP6nwCvS6"
         // Override point for customization after application launch.
         window = UIWindow()
         window?.rootViewController = RootViewController()
@@ -22,6 +26,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         return true
     }
+    func application(
+            _ app: UIApplication,
+            open url: URL,
+            options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+        ) -> Bool {
+
+            ApplicationDelegate.shared.application(
+                app,
+                open: url,
+                sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+                annotation: options[UIApplication.OpenURLOptionsKey.annotation]
+            )
+
+        }
 
     // MARK: UISceneSession Lifecycle
 

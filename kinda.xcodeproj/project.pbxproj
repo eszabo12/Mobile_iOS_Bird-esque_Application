@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		433F389267D3D3DB35E6A098 /* Pods_kinda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB44FD3456DC3FE75C5B8832 /* Pods_kinda.framework */; };
+		4B1F5B4425AD51E100A2CEBD /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 4B1F5B4325AD51E100A2CEBD /* FacebookLogin */; };
+		4B1F5B4625AD51E100A2CEBD /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 4B1F5B4525AD51E100A2CEBD /* FacebookShare */; };
+		4B48F89525B2DD8F00BCE678 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48F89425B2DD8F00BCE678 /* CheckoutViewController.swift */; };
 		4B57C40A25A9A923009D8785 /* AnnotationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57C40925A9A923009D8785 /* AnnotationClass.swift */; };
 		4B57C41125A9B0D8009D8785 /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57C41025A9B0D8009D8785 /* OvalLayer.swift */; };
 		4B58F3C425A610520099B41D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58F3C325A610520099B41D /* AppDelegate.swift */; };
@@ -19,7 +22,6 @@
 		4B58F3F725A62C410099B41D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B58F3F625A62C410099B41D /* GoogleService-Info.plist */; };
 		4B58F3F825A62C410099B41D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B58F3F625A62C410099B41D /* GoogleService-Info.plist */; };
 		4B58F3F925A62C410099B41D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B58F3F625A62C410099B41D /* GoogleService-Info.plist */; };
-		4B8B438825A637E6006B999B /* LaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B438725A637E6006B999B /* LaunchController.swift */; };
 		4B8B438F25A637F9006B999B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B438E25A637F9006B999B /* RootViewController.swift */; };
 		4B8B439025A637F9006B999B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B438E25A637F9006B999B /* RootViewController.swift */; };
 		4B8B439125A637F9006B999B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B438E25A637F9006B999B /* RootViewController.swift */; };
@@ -50,6 +52,7 @@
 /* Begin PBXFileReference section */
 		2247CB9FBBB8A3879361E3E6 /* Pods_kindaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kindaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		236366F465B287404067262B /* Pods-kinda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kinda.release.xcconfig"; path = "Target Support Files/Pods-kinda/Pods-kinda.release.xcconfig"; sourceTree = "<group>"; };
+		4B48F89425B2DD8F00BCE678 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		4B57C40925A9A923009D8785 /* AnnotationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationClass.swift; sourceTree = "<group>"; };
 		4B57C41025A9B0D8009D8785 /* OvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OvalLayer.swift; sourceTree = "<group>"; };
 		4B58F3C025A610520099B41D /* kinda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kinda.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,9 +68,9 @@
 		4B58F3E525A610540099B41D /* kindaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kindaUITests.swift; sourceTree = "<group>"; };
 		4B58F3E725A610540099B41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B58F3F625A62C410099B41D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4B8B438725A637E6006B999B /* LaunchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchController.swift; sourceTree = "<group>"; };
 		4B8B438E25A637F9006B999B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		4B8BE65325A7B9A100DB89DB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4BAFCC9B25AD707C0040BFEF /* kinda.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kinda.entitlements; sourceTree = "<group>"; };
 		4BC3297425A7A94000F8A8E3 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		4BFF487125ABC44E004EFFDB /* MyAuthorizationAppleIDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAuthorizationAppleIDButton.swift; sourceTree = "<group>"; };
 		6D0ABF40A7A5BEACC23D4698 /* Pods-kindaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kindaUITests.debug.xcconfig"; path = "Target Support Files/Pods-kindaUITests/Pods-kindaUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1F5B4425AD51E100A2CEBD /* FacebookLogin in Frameworks */,
 				433F389267D3D3DB35E6A098 /* Pods_kinda.framework in Frameworks */,
+				4B1F5B4625AD51E100A2CEBD /* FacebookShare in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				4B8B438E25A637F9006B999B /* RootViewController.swift */,
-				4B8B438725A637E6006B999B /* LaunchController.swift */,
 				4B8BE65325A7B9A100DB89DB /* MapViewController.swift */,
+				4B48F89425B2DD8F00BCE678 /* CheckoutViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 		4B58F3C225A610520099B41D /* kinda */ = {
 			isa = PBXGroup;
 			children = (
+				4BAFCC9B25AD707C0040BFEF /* kinda.entitlements */,
 				4B50D8A625A6AA4B00551141 /* ViewControllers */,
 				4B8BE65825A7BA1000DB89DB /* Storyboards */,
 				4BC3297325A7A93000F8A8E3 /* Special Classes */,
@@ -236,6 +242,10 @@
 			dependencies = (
 			);
 			name = kinda;
+			packageProductDependencies = (
+				4B1F5B4325AD51E100A2CEBD /* FacebookLogin */,
+				4B1F5B4525AD51E100A2CEBD /* FacebookShare */,
+			);
 			productName = kinda;
 			productReference = 4B58F3C025A610520099B41D /* kinda.app */;
 			productType = "com.apple.product-type.application";
@@ -311,6 +321,9 @@
 				Base,
 			);
 			mainGroup = 4B58F3B725A610510099B41D;
+			packageReferences = (
+				4B1F5B4225AD51E100A2CEBD /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = 4B58F3C125A610520099B41D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -478,9 +491,9 @@
 			files = (
 				4B8B438F25A637F9006B999B /* RootViewController.swift in Sources */,
 				4B57C40A25A9A923009D8785 /* AnnotationClass.swift in Sources */,
-				4B8B438825A637E6006B999B /* LaunchController.swift in Sources */,
 				4B58F3C425A610520099B41D /* AppDelegate.swift in Sources */,
 				4B58F3C625A610520099B41D /* SceneDelegate.swift in Sources */,
+				4B48F89525B2DD8F00BCE678 /* CheckoutViewController.swift in Sources */,
 				4BC3297525A7A94000F8A8E3 /* UIButton.swift in Sources */,
 				4B8BE65425A7B9A100DB89DB /* MapViewController.swift in Sources */,
 				4B57C41125A9B0D8009D8785 /* OvalLayer.swift in Sources */,
@@ -655,8 +668,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LM36XBWYVJ;
+				CODE_SIGN_ENTITLEMENTS = kinda/kinda.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = kinda/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -664,6 +678,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = e.kinda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -675,8 +690,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LM36XBWYVJ;
+				CODE_SIGN_ENTITLEMENTS = kinda/kinda.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = kinda/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -684,6 +700,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = e.kinda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -817,6 +834,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B1F5B4225AD51E100A2CEBD /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B1F5B4325AD51E100A2CEBD /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B1F5B4225AD51E100A2CEBD /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		4B1F5B4525AD51E100A2CEBD /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B1F5B4225AD51E100A2CEBD /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B58F3B825A610510099B41D /* Project object */;
 }

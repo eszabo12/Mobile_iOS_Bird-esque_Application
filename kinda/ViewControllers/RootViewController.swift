@@ -9,14 +9,18 @@ import AuthenticationServices
 import UIKit
 import Firebase
 
+//import FBSDKLoginKit
+
 class RootViewController: UIViewController, UITextFieldDelegate {
+//    var APIClient : MyAPIClient! // this was for stripe but I didn't finish setup
     public var userNameTextField: UITextField!
     var logo: UIImageView!
     public var passwordTextField: UITextField!
     public var signInButton: UIButton!
-    var appleButton: UIButton!
     var googleButton: UIButton!
-    var authorizationButton: ASAuthorizationAppleIDButton!
+    var appleButton: ASAuthorizationAppleIDButton!
+//    var facebookButton: FBLoginButton!
+//    var facebookButton:
     override open var shouldAutorotate: Bool {
         return true
     }
@@ -26,11 +30,12 @@ class RootViewController: UIViewController, UITextFieldDelegate {
         if let email = userNameTextField.text, let password = passwordTextField.text {
             Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                 if let error = error{
-                    print(error.localizedDescription)
-                    (UIApplication.shared.windows.filter {$0.isKeyWindow}.first)?.rootViewController = MapViewController()
+                    let alert = UIAlertController(title: "\(error.localizedDescription)", message: "", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                    self.present(alert, animated: true)
                     return
                 }
-                
+                (UIApplication.shared.windows.filter {$0.isKeyWindow}.first)?.rootViewController = MapViewController()
             }
 
         }
@@ -38,6 +43,8 @@ class RootViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        APIClient = MyAPIClient()
+        
         let gradient = CAGradientLayer()
         gradient.frame = view.bounds
         gradient.colors = [UIColor.systemBlue.cgColor, UIColor.systemPurple.cgColor]
@@ -93,17 +100,29 @@ class RootViewController: UIViewController, UITextFieldDelegate {
         or.textColor = UIColor(red: 0.86, green: 0.86, blue: 0.86, alpha: 1.00)
         view.addSubview(or)
         
-        authorizationButton = ASAuthorizationAppleIDButton(authorizationButtonType: .signIn,
-                                                           authorizationButtonStyle: .black
+        appleButton = ASAuthorizationAppleIDButton(authorizationButtonType: .signIn,
+                                                   authorizationButtonStyle: .black
 )
-        authorizationButton.cornerRadius = authorizationButton.bounds.height/2
-        authorizationButton.addTarget(self, action: #selector(handleAuthorizationAppleIDButtonPress), for: .touchUpInside)
-        view.addSubview(authorizationButton)
-        authorizationButton.snp.makeConstraints { (make) in
+        appleButton.cornerRadius = appleButton.bounds.height/2
+        view.addSubview(appleButton)
+        appleButton.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
-            make.bottom.equalTo(or).offset(50)
+            make.top.equalTo(or).offset(50)
+            make.width.equalTo(300)
+            make.height.equalTo(50)
         }
+        appleButton.addTarget(self, action: #selector(self.actionHandleAppleSignin), for: .touchDown)
 
+        
+//        let facebookButton = FBLoginButton()
+//        view.addSubview(facebookButton)
+//        facebookButton.snp.makeConstraints { (make) in
+//            make.centerX.equalToSuperview()
+//            make.top.equalTo(appleButton).offset(75)
+//            make.width.equalTo(300)
+//            make.height.equalTo(50)
+//        }
+        
     }
 
     /*
@@ -119,11 +138,53 @@ class RootViewController: UIViewController, UITextFieldDelegate {
     @objc
     func signInButtonAction() {
         print("Button pressed")
+//        APIClient.createCustomerKey(withAPIVersion: "2020-08-27", completion: @escaping STPJSONResponseCompletionBlock)
         didTapSignUpButton()
     }
     
-    @objc func handleAuthorizationAppleIDButtonPress(_sender: Any) {
-//        sendActions(for: .touchUpInside)
+    @objc func actionHandleAppleSignin() {
+            let appleIDProvider = ASAuthorizationAppleIDProvider()
+            let request = appleIDProvider.createRequest()
+            request.requestedScopes = [.fullName, .email]
+            let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+            authorizationController.delegate = self
+            authorizationController.presentationContextProvider = self
+            authorizationController.performRequests()
+        }
+
+}
+
+extension UIViewController: ASAuthorizationControllerDelegate {
+
+     // ASAuthorizationControllerDelegate function for authorization failed
+    public func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+        print(error.localizedDescription)
+    }
+
+       // ASAuthorizationControllerDelegate function for successful authorization
+
+    public func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+        if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
+            // Create an account as per your requirement
+            let appleId = appleIDCredential.user
+            let appleUserFirstName = appleIDCredential.fullName?.givenName
+            let appleUserLastName = appleIDCredential.fullName?.familyName
+            let appleUserEmail = appleIDCredential.email
+            //Write your code
+        } else if let passwordCredential = authorization.credential as? ASPasswordCredential {
+            let appleUsername = passwordCredential.user
+            let applePassword = passwordCredential.password
+            //Write your code
+        }
+
+    }
+
+}
+
+extension UIViewController: ASAuthorizationControllerPresentationContextProviding {
+    //For present window
+    public func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+        return self.view.window!
     }
 
 }

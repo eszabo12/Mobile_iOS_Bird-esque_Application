@@ -5,6 +5,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'kinda' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'Stripe'
   pod 'SnapKit'
   # Pods for kinda
   pod 'Firebase/Core'
@@ -17,6 +18,7 @@ target 'kinda' do
   target 'kindaTests' do
       pod 'Firebase/Core'
     pod 'Firebase/Auth'
+    pod 'Stripe'
     pod 'Firebase/Database'
     pod 'Firebase/Storage'
     pod 'Firebase/Analytics'
@@ -26,6 +28,7 @@ target 'kinda' do
   end
 
   target 'kindaUITests' do
+    pod 'Stripe'
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
