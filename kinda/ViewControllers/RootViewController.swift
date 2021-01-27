@@ -22,19 +22,19 @@ class RootViewController: UIViewController, UITextFieldDelegate {
 //    var facebookButton: FBLoginButton!
 //    var facebookButton:
     override open var shouldAutorotate: Bool {
-        return true
+        return false
     }
     
     @objc func didTapSignUpButton() {
         
         if let email = userNameTextField.text, let password = passwordTextField.text {
             Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-                if let error = error{
-                    let alert = UIAlertController(title: "\(error.localizedDescription)", message: "", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                    self.present(alert, animated: true)
-                    return
-                }
+//                if let error = error{
+//                    let alert = UIAlertController(title: "\(error.localizedDescription)", message: "", preferredStyle: .alert)
+//                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+//                    self.present(alert, animated: true)
+//                    return
+//                }
                 (UIApplication.shared.windows.filter {$0.isKeyWindow}.first)?.rootViewController = MapViewController()
             }
 

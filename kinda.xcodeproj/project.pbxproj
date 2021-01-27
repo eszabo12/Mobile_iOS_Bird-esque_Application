@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		433F389267D3D3DB35E6A098 /* Pods_kinda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB44FD3456DC3FE75C5B8832 /* Pods_kinda.framework */; };
+		4B0B863E25BE278A005BD688 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B863D25BE278A005BD688 /* Robot.swift */; };
 		4B1F5B4425AD51E100A2CEBD /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 4B1F5B4325AD51E100A2CEBD /* FacebookLogin */; };
 		4B1F5B4625AD51E100A2CEBD /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 4B1F5B4525AD51E100A2CEBD /* FacebookShare */; };
 		4B48F89525B2DD8F00BCE678 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48F89425B2DD8F00BCE678 /* CheckoutViewController.swift */; };
+		4B4E958325B38B810071C3FC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E958225B38B810071C3FC /* GameViewController.swift */; };
+		4B4E958825B38BE80071C3FC /* GameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B4E958725B38BE80071C3FC /* GameStoryboard.storyboard */; };
 		4B57C40A25A9A923009D8785 /* AnnotationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57C40925A9A923009D8785 /* AnnotationClass.swift */; };
 		4B57C41125A9B0D8009D8785 /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57C41025A9B0D8009D8785 /* OvalLayer.swift */; };
 		4B58F3C425A610520099B41D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B58F3C325A610520099B41D /* AppDelegate.swift */; };
@@ -52,7 +55,10 @@
 /* Begin PBXFileReference section */
 		2247CB9FBBB8A3879361E3E6 /* Pods_kindaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kindaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		236366F465B287404067262B /* Pods-kinda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kinda.release.xcconfig"; path = "Target Support Files/Pods-kinda/Pods-kinda.release.xcconfig"; sourceTree = "<group>"; };
+		4B0B863D25BE278A005BD688 /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
 		4B48F89425B2DD8F00BCE678 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		4B4E958225B38B810071C3FC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		4B4E958725B38BE80071C3FC /* GameStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = GameStoryboard.storyboard; path = kinda/Storyboards/GameStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		4B57C40925A9A923009D8785 /* AnnotationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationClass.swift; sourceTree = "<group>"; };
 		4B57C41025A9B0D8009D8785 /* OvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OvalLayer.swift; sourceTree = "<group>"; };
 		4B58F3C025A610520099B41D /* kinda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kinda.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +126,7 @@
 				4B8B438E25A637F9006B999B /* RootViewController.swift */,
 				4B8BE65325A7B9A100DB89DB /* MapViewController.swift */,
 				4B48F89425B2DD8F00BCE678 /* CheckoutViewController.swift */,
+				4B4E958225B38B810071C3FC /* GameViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -156,7 +163,6 @@
 				4B58F3C325A610520099B41D /* AppDelegate.swift */,
 				4B58F3C525A610520099B41D /* SceneDelegate.swift */,
 				4B58F3CC25A610540099B41D /* Assets.xcassets */,
-				4B58F3CE25A610540099B41D /* LaunchScreen.storyboard */,
 				4B58F3F625A62C410099B41D /* GoogleService-Info.plist */,
 				4B58F3D125A610540099B41D /* Info.plist */,
 			);
@@ -184,6 +190,8 @@
 		4B8BE65825A7BA1000DB89DB /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				4B58F3CE25A610540099B41D /* LaunchScreen.storyboard */,
+				4B4E958725B38BE80071C3FC /* GameStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -191,6 +199,7 @@
 		4BC3297325A7A93000F8A8E3 /* Special Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4B0B863D25BE278A005BD688 /* Robot.swift */,
 				4B57C41025A9B0D8009D8785 /* OvalLayer.swift */,
 				4BC3297425A7A94000F8A8E3 /* UIButton.swift */,
 				4B57C40925A9A923009D8785 /* AnnotationClass.swift */,
@@ -343,6 +352,7 @@
 				4B58F3D025A610540099B41D /* LaunchScreen.storyboard in Resources */,
 				4B58F3F725A62C410099B41D /* GoogleService-Info.plist in Resources */,
 				4B58F3CD25A610540099B41D /* Assets.xcassets in Resources */,
+				4B4E958825B38BE80071C3FC /* GameStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +499,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B4E958325B38B810071C3FC /* GameViewController.swift in Sources */,
+				4B0B863E25BE278A005BD688 /* Robot.swift in Sources */,
 				4B8B438F25A637F9006B999B /* RootViewController.swift in Sources */,
 				4B57C40A25A9A923009D8785 /* AnnotationClass.swift in Sources */,
 				4B58F3C425A610520099B41D /* AppDelegate.swift in Sources */,
@@ -669,8 +681,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = kinda/kinda.entitlements;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LM36XBWYVJ;
 				INFOPLIST_FILE = kinda/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -691,8 +704,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = kinda/kinda.entitlements;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LM36XBWYVJ;
 				INFOPLIST_FILE = kinda/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
