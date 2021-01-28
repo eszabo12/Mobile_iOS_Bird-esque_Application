@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         StripeAPI.defaultPublishableKey = "pk_test_fc5eGEHZiBB2IlzUP6nwCvS6"
         // Override point for customization after application launch.
         window = UIWindow()
-        window?.rootViewController = RootViewController()
+        window?.rootViewController = LoginViewController()
         window?.makeKeyAndVisible()
         FirebaseApp.configure()
         return true

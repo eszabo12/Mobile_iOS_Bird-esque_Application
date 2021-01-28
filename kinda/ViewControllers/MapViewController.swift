@@ -54,7 +54,7 @@ class MapViewController: UIViewController {
         mapView.addSubview(checkoutButton)
     }
     @objc func checkoutButtonAction() {
-        (UIApplication.shared.windows.filter {$0.isKeyWindow}.first)?.rootViewController = GameViewController()
+        (UIApplication.shared.windows.filter {$0.isKeyWindow}.first)?.rootViewController = CameraViewController()
     }
     func initBots(){
         ref.observe(DataEventType.childAdded, with: { (snapshot) in

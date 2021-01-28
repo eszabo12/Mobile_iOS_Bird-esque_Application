@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="CGG-lS-vgU">
+            <objects>
+                <viewController id="TFA-DP-CuD" customClass="CameraViewController" customModule="kinda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tdn-hE-pua">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPd-ht-XjF" userLabel="backButton">
+                                <rect key="frame" x="157" y="433" width="99" height="30"/>
+                                <color key="backgroundColor" red="0.90442843260000005" green="0.90442843260000005" blue="0.90442843260000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ok7-nA-4bt"/>
+                                    <constraint firstAttribute="height" constant="100" id="hjQ-tM-sYu"/>
+                                </constraints>
+                                <color key="tintColor" red="0.90442843260000005" green="0.90442843260000005" blue="0.90442843260000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="forwardButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXy-Pb-wJd" userLabel="rightButton">
+                                <rect key="frame" x="157" y="433" width="99" height="30"/>
+                                <color key="backgroundColor" red="0.90442843260000005" green="0.90442843260000005" blue="0.90442843260000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="geR-I6-GJV"/>
+                                    <constraint firstAttribute="width" constant="100" id="iwm-aj-8XS"/>
+                                </constraints>
+                                <color key="tintColor" red="0.90442843260000005" green="0.90442843260000005" blue="0.90442843260000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="forwardButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWc-s4-BUj" userLabel="leftButton">
+                                <rect key="frame" x="157" y="433" width="99" height="30"/>
+                                <color key="backgroundColor" red="0.90442843260000005" green="0.90442843260000005" blue="0.90442843260000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9r3-8I-drS"/>
+                                    <constraint firstAttribute="width" constant="100" id="AaW-fQ-UbV"/>
+                                </constraints>
+                                <color key="tintColor" red="0.90442843260000005" green="0.90442843260000005" blue="0.90442843260000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="forwardButton"/>
+                                <connections>
+                                    <action selector="leftButton:" destination="TFA-DP-CuD" eventType="touchUpInside" id="5cx-9I-cKS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orh-LB-6jR">
+                                <rect key="frame" x="74" y="708" width="99" height="30"/>
+                                <color key="backgroundColor" red="0.90442843260000005" green="0.90442843260000005" blue="0.90442843260000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gGu-fD-70w"/>
+                                    <constraint firstAttribute="width" constant="100" id="nEq-Ge-T03"/>
+                                </constraints>
+                                <color key="tintColor" red="0.90442843260000005" green="0.90442843260000005" blue="0.90442843260000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="forwardButton"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ie0-Eh-sSe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="BPd-ht-XjF" id="aG2-rS-Byj"/>
+                        <outlet property="forwardButton" destination="orh-LB-6jR" id="Gd3-wI-iwD"/>
+                        <outlet property="leftButton" destination="OWc-s4-BUj" id="DMn-Gw-ngW"/>
+                        <outlet property="rightButon" destination="KXy-Pb-wJd" id="n71-oW-ZfJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60D-1O-k9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-270" y="47"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

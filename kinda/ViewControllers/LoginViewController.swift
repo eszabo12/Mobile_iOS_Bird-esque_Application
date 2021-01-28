@@ -11,7 +11,7 @@ import Firebase
 
 //import FBSDKLoginKit
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+class RootViewController: UIViewController, UITextFieldDelegate {
 //    var APIClient : MyAPIClient! // this was for stripe but I didn't finish setup
     public var userNameTextField: UITextField!
     var logo: UIImageView!
