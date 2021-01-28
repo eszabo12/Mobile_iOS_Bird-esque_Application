@@ -93,3 +93,4 @@ func configureButton(addButton: UIButton)
     addButton.layer.borderWidth = 2.0
     addButton.clipsToBounds = true
 }
+
