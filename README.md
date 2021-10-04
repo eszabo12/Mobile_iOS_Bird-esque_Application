@@ -1,6 +1,10 @@
 # Kinda
 
 
+
+**This is a robotics rental iOS application.**
+
+
 pull the repo and enter its directory
 
 pod install
