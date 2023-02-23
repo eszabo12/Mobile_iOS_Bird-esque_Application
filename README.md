@@ -2,7 +2,7 @@
 
 
 
-**This is a robotics rental iOS application.**
+**This is an object rental iOS application.**
 
 
 pull the repo and enter its directory
